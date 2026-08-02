@@ -6,7 +6,7 @@ conversation thread (`thread_id`) — ask it your name in one turn, ask "what's 
 in the next, and it answers correctly, because LangGraph replays the checkpointed
 message history for that thread on every `invoke`.
 
-Model: Gemini 2.5 Flash (via `init_chat_model`)
+Model: Gemini 3.5 Flash (via `init_chat_model`)
 Tool: Tavily web search
 
 ## Setup
