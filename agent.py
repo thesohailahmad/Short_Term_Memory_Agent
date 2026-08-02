@@ -10,7 +10,7 @@ load_dotenv()
 model = init_chat_model(
     model="gemini-3.5-flash",
     model_provider="google_genai",
-    temperature=1.0,
+    temperature=1.0
 )
 
 search_tool = TavilySearch(max_results=3)
@@ -20,8 +20,8 @@ agent = create_agent(
     tools=[search_tool],
     checkpointer=InMemorySaver(),
     system_prompt=(
-        "You are a helpful assistant. Use the search tool to answer "
-        "questions about current events or facts you're unsure of."
+        "You are a helpful assistant. Use the search tool to answer the query "
+        "questions about current events or facts you're unsure of if you are not just I am not sure this is authentic."
     ),
 )
 
